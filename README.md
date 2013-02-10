@@ -31,8 +31,4 @@ SSL Enable non-standard port and verbose
   -s, --scary           Scary Ironic ASCII to impress your boss
 
   -v, --verbose         Be verbose
-  
-## Screenshot
-  
-![ScreenShot](https://raw.github.com/mainframed/MFDoS/master/MFDoS-Screenshot.png)
 
