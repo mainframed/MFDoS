@@ -6,7 +6,7 @@ A PoC script to exhaust all TN3270 connections to a mainframe
 
 **Created by**: Soldier of Fortran (@mainframed767)                
 
-**Use**: Given an IP and port this script will try to exhaust all connected 
+**Use**: Given an IP and port this script will try to exhaust all available connections.
 
 ## Example
 
