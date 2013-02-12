@@ -127,7 +127,7 @@ while True:
 		time.sleep(30)
 	if limit_reached == 1:
 		print ""
-		print t.move_up + t.bold_green + "Maximum sessions opened. If mainframe still up try increasing your your max connections with " + t.bold_white + "ulimit -n <number> " + t.bold_green + "(try ulimit -n 4096)" + t.normal
+		print t.move_up + t.bold_green + "Maximum sessions opened. If mainframe still up try increasing your your max connections with " + t.bold_white + "ulimit -n <number> " + t.bold_green + "(try ulimit -n 4096). Most places have a really large number here (e.g. 30,000) so you'll need to play with this number if the mainframe is still up" + t.normal
 	try:
 		em = Emulator()
 		em.connect(results.target)
