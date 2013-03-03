@@ -2,7 +2,7 @@
 
 A PoC script to exhaust all TN3270 connections to a mainframe
 
-**Requirements**: Python, s3270 and the IP/Port of mainframe           
+**Requirements**: Python and the IP/Port of mainframe           
 
 **Created by**: Soldier of Fortran (@mainframed767)                
 
@@ -10,25 +10,21 @@ A PoC script to exhaust all TN3270 connections to a mainframe
 
 ## Example
 
-Non-SSL standard port:
+Boring mode:
 
-./MFDoS.py -t 192.168.0.32
+./MFDoS.py -t 192.168.0.32 -p 23
 
-Non-SSL, non-startard port and enabling ASCII art mode
+SuperScary(tm) movie mode
 
-./MFDoS.py -t 10.10.10.53:2323 -s
+./MFDoS.py -t 10.10.10.53 -p 2323 -s
 
-SSL Enable non-standard port and verbose
-
-./MFDoS.py -t L:172.16.0.34:9922 -v
 
 ## Arguments:
 
   -h, --help            show this help message and exit
 
-  -t TARGET, --target TARGET target IP address/Hostname and port: TARGET[:PORT] default port is 23. Add L: for SSL enabled TN3270 hosts. E.G. L:192.168.0.1:3270
+  -t TARGET, --target TARGET target IP address/Hostname
 
   -s, --scary           Scary Ironic ASCII to impress your boss
 
-  -v, --verbose         Be verbose
-
+  -p PORT, --port PORT  target port
